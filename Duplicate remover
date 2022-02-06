@@ -1,0 +1,14 @@
+input_string=input("please enter your string: ")
+answer= ""
+
+for index in range (len(input_string) -1) :
+    
+    current_character = input_string[index]
+    next_character = input_string[index+1]
+    
+    if current_character != next_character:
+        answer= answer+ current_character
+        
+        updated_answer =answer + input_string[index+1]
+        
+print(updated_answer)
